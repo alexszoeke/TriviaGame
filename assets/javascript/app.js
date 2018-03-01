@@ -2,6 +2,7 @@ $(document).ready(function () {
 
     $("#start").on('click', function () {
         $("#start").remove();
+        $("#taylorsnl").remove();
         game.loadQuestion();
         console.log("start is working! step 1");
     });
@@ -63,8 +64,8 @@ $(document).ready(function () {
                 }
             },
             loadQuestion: function () {
-                $("#timer").html("<h2> Time Remaining: <span id='counter'>" + game.counter + " Seconds</span></h2>");
                 timer = setInterval(game.countDown, 1000);
+                $("#timer").show().html("<h2> Time Remaining: <span id='counter'>" + game.counter + " Seconds</span></h2>");
                 $("#wrapper").html("<br><h2>" + game.questions[game.currentQuestion].question + "</h2>");
                 for (i = 0; i < game.questions[game.currentQuestion].answers.length; i++) {
                 $("#wrapper").append('<br><button class="answer-button" id="button-' + i + '" data-name="' + game.questions[game.currentQuestion].answers[i] + '">' + game.questions[game.currentQuestion].answers[i] + "</button>");
@@ -72,7 +73,7 @@ $(document).ready(function () {
             },
             nextQuestion: function () {
                 game.counter = 20;
-                $("#timer").html("<h2> Time Remaining: <span id='counter'>" + game.counter + " Seconds</span></h2>");
+                $("#timer").show().html("<h2> Time Remaining: <span id='counter'>" + game.counter + " Seconds</span></h2>");
                 game.currentQuestion++;
                 game.loadQuestion();
             },
@@ -90,7 +91,7 @@ $(document).ready(function () {
             },
 
             results: function () {
-                $("#timer").remove();
+                $("#timer").hide();
                 $("#wrapper").html("<h2>All done!</h2>");
                 $("#wrapper").append("<h3>Correct: " + game.correct + "</h3>");
                 $("#wrapper").append("<h3>Incorrect: " + game.incorrect + "</h3>");

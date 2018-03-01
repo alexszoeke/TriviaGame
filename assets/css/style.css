@@ -1,38 +1,58 @@
 body {
-    background-color: rgb(231, 35, 67);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #373737;
+    font-family:'Raleway', sans-serif;
     font-size: 15px;
     color: black
 }
 
 .container {
     margin: 30px auto;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
     border: dashed black 5px;
 }
 
+h1 {
+    font-family: 'Text Me One', sans-serif;
+    font-size: 65px;
+}
+
 .row {
-    display: block;
+    display: grid;
 }
 
 #wrapper {
     margin: 30px auto;
-    background-color: #ffffff;
+    background-color: #f4f4f4;
 }
 
 
 button {
-    background-color: purple;
+    background-color: #C0B283;
+    color: #373737;
     border-radius: .5rem;
     font-size: 25px;
+    border: 0px;
     
 }
 
-#start, #timer {
-    margin-left: 12.25rem;
+#timer {
+    margin-left: 7.25rem;
 }
 
 #timer {
     font-size: 40px;
+}
+
+#start {
+    background-color: #C0B283;
+    color: #373737;
+    border-radius: .5rem;
+    font-size: 25px;
+    width: 50%;
+    text-align: center;
+}
+
+img {
+    margin: 10px auto;
 }
 
