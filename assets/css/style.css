@@ -11,6 +11,10 @@ body {
     border: dashed black 5px;
 }
 
+.row {
+    display: block;
+}
+
 #wrapper {
     margin: 30px auto;
     background-color: #ffffff;
@@ -29,5 +33,6 @@ button {
 }
 
 #timer {
-    font-size: 25px;
+    font-size: 40px;
 }
+
