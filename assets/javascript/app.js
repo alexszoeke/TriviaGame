@@ -17,20 +17,20 @@ $(document).ready(function () {
 
     var questions = [{
         question: "When is Taylor's birthday?",
-        answers: ["April 15, 1989", "November 30, 1992", "December 13, 1989"],
+        answers: ["March 11, 1992", "November 30, 1992", "December 13, 1989", "February 21, 1991"],
         correctAnswer: "December 13, 1989",
         imageURL: '<img src="./assets/images/1989.gif" alt="1989 Album">'
     },
     {
         question: "In 2012, Taylor made the Guinness World Records for the Fastest Selling Single in Digital History. Which song broke the internet?",
-        answers: ["Love Story", "We Are Never Getting Back Together", "Blank Space"],
+        answers: ["Love Story", "We Are Never Getting Back Together", "Blank Space", "Bad Blood"],
         correctAnswer: "We Are Never Getting Back Together",
         imageURL: '<img src="./assets/images/wangbt.gif" alt="We Are Never Getting Back Together">'
     },
 
     {
         question: "Taylor has two cats named after which two popular TV characters?",
-        answers: ["Olivia Benson & Meredith Gray", "Pam Beasley & Rachel Green", "Carrie Bradshaw & Liz Lemon"],
+        answers: ["Olivia Benson & Meredith Gray", "Pam Beasley & Rachel Green", "Carrie Bradshaw & Liz Lemon", "Bart Simpson & Michael Scott"],
         correctAnswer: "Olivia Benson & Meredith Gray",
         imageURL: '<img src="./assets/images/cats.gif" alt="Olivia and Meredith">'
     },
@@ -45,7 +45,14 @@ $(document).ready(function () {
         answers: ["it's gonna blow up today", "it's gonna go down in flames", "i'm going to run away", "None of these are correct."],
         correctAnswer: "it's gonna go down in flames",
         imageURL: '<img src="./assets/images/blankspace.gif" alt="Blank Space">'
+    },
+    {
+        question: "Which of the following is the correct name for the various meet & greets Taylor has after her concerts?",
+        answers: ["The T-Party Room","Club Red", "Loft 89", "All of the above"],
+        correctAnswer: "All of the above",
+        imageURL:'<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtXCC0_TC4yI_9Cm2bxGvKg3-c1uN8RAEkX-jpNg3lpeRE2Gy" alt="Loft 89">'
     }
+                     
 ];
 
     var game =
