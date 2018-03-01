@@ -57,7 +57,7 @@ $(document).ready(function () {
                 timer = setInterval(game.countDown, 1000);
                 $("#wrapper").html("<br><h2>" + game.questions[game.currentQuestion].question + "</h2>");
                 for (i = 0; i < game.questions[game.currentQuestion].answers.length; i++) {
-                $("#wrapper").append('<button class="answer-button" id="button-' + i + '" data-name="' + game.questions[game.currentQuestion].answers[i] + '">' + game.questions[game.currentQuestion].answers[i] + "</button>").css("button{border-radius: 1rem;}");
+                $("#wrapper").append('<br><button class="answer-button" id="button-' + i + '" data-name="' + game.questions[game.currentQuestion].answers[i] + '">' + game.questions[game.currentQuestion].answers[i] + "</button>").css("button{border-radius: 1rem;}");
                 }
             },
             nextQuestion: function () {
@@ -82,7 +82,7 @@ $(document).ready(function () {
                 $("#timer").remove();
                 $("#wrapper").html("<h2>All done!</h2>");
                 $("#wrapper").append("<h3>Correct: " + game.correct + "</h3>");
-                $("#wrapper").append("<h3>Inorrect: " + game.incorrect + "</h3>");
+                $("#wrapper").append("<h3>Incorrect: " + game.incorrect + "</h3>");
                 $("#wrapper").append("<h3>Unanswered: " + game.unanswered + "</h3>");
             },
 

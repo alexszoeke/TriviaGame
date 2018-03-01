@@ -1,24 +1,33 @@
 body {
     background-color: rgb(231, 35, 67);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 15px;
     color: black
-};
+}
 
 .container {
     margin: 30px auto;
     background-color: #ffffff;
     border: dashed black 5px;
-};
+}
+
 #wrapper {
     margin: 30px auto;
     background-color: #ffffff;
-    border: dashed black 5px;
-};
+}
+
 
 button {
-    border-radius: 1rem;
-    height: 50px;
-    width: 10px;
-    margin: 10px;
-};
+    background-color: purple;
+    border-radius: .5rem;
+    font-size: 25px;
+    
+}
+
+#start, #timer {
+    margin-left: 12.25rem;
+}
+
+#timer {
+    font-size: 25px;
+}
