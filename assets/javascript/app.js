@@ -50,7 +50,7 @@ $(document).ready(function () {
         question: "Which of the following is the correct name for the various meet & greets Taylor has after her concerts?",
         answers: ["The T-Party Room","Club Red", "Loft 89", "All of the above"],
         correctAnswer: "All of the above",
-        imageURL:'<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHtXCC0_TC4yI_9Cm2bxGvKg3-c1uN8RAEkX-jpNg3lpeRE2Gy" alt="Loft 89">'
+        imageURL:'<img src="./assets/images/loft89.gif" alt="Loft 89">'
     }
                      
 ];
